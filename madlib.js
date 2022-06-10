@@ -36,23 +36,33 @@ $("#switchToDark").on("click", () => {
   localStorage.setItem("theme", "dark");
 });
 
-/*
-$("#switchTo").on("click", function () {
-  document.body.classList.toggle("body-dark");
+
+const switchToDark = function () {
+  document.body.classList.add("body-dark");
   const h3 = document.getElementsByClassName("h3");
   const final = document.getElementById("final");
   const nav = document.getElementById("navbar");
   const navElements = document.getElementsByClassName("nav-link");
-  nav.classList.toggle("bg-dark");
-  final.classList.toggle("final-dark");
+  nav.classList.add("bg-dark");
+  final.classList.add("final-dark");
   for (let i = 0; i < navElements.length; i++) {
-    navElements[i].classList.toggle("text-white");
+    navElements[i].classList.add("text-white");
   }
   for (let i = 0; i < h3.length; i++) {
-    h3[i].classList.toggle("h3-dark");
+    h3[i].classList.add("h3-dark");
   }
-});
-*/
+};
+
+const checkForTheme = () => {
+  let theme = localStorage.getItem('theme');
+  if(theme === "dark") {
+    switchToLight();
+  } else {
+    switchToDark();
+  }
+}
+
+
 
 const addCookies = () => {
   document.cookie = "user=someone; expires=Wed, 15 Jun 2022 00:00:00 GMT";
