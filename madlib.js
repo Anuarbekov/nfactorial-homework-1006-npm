@@ -80,8 +80,6 @@ const checkForTheme = () => {
   }
 }
 
-
-
 const addCookies = () => {
   document.cookie = "user=someone; expires=Wed, 15 Jun 2022 00:00:00 GMT";
 };
