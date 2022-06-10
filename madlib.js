@@ -28,6 +28,24 @@ $("document").ready(() => {
   });
 });
 
+$('#switchToLight').on('click', () => {
+
+});
+
+
+$('#switchToDark').on('click', () => {
+
+});
+
+
+
+
+
+
+
+
+
+
 /*
 $("#switchTo").on("click", function () {
   document.body.classList.toggle("body-dark");
