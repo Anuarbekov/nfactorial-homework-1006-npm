@@ -56,18 +56,18 @@ const switchToDark = function () {
 };
 
 const switchToLight = function () {
-  document.body.classList.add("body-dark");
+  document.body.classList.remove("body-dark");
   const h3 = document.getElementsByClassName("h3");
   const final = document.getElementById("final");
   const nav = document.getElementById("navbar");
   const navElements = document.getElementsByClassName("nav-link");
-  nav.classList.add("bg-dark");
-  final.classList.add("final-dark");
+  nav.classList.remove("bg-dark");
+  final.classList.remove("final-dark");
   for (let i = 0; i < navElements.length; i++) {
-    navElements[i].classList.add("text-white");
+    navElements[i].classList.remove("text-white");
   }
   for (let i = 0; i < h3.length; i++) {
-    h3[i].classList.add("h3-dark");
+    h3[i].classList.remove("h3-dark");
   }
 };
 
