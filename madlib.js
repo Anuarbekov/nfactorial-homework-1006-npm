@@ -30,10 +30,12 @@ $("document").ready(() => {
 
 $("#switchToLight").on("click", () => {
   localStorage.setItem("theme", "light");
+  switchToLight();
 });
 
 $("#switchToDark").on("click", () => {
   localStorage.setItem("theme", "dark");
+  switchToDark();
 });
 
 
@@ -53,12 +55,28 @@ const switchToDark = function () {
   }
 };
 
+const switchToLight = function () {
+  document.body.classList.add("body-dark");
+  const h3 = document.getElementsByClassName("h3");
+  const final = document.getElementById("final");
+  const nav = document.getElementById("navbar");
+  const navElements = document.getElementsByClassName("nav-link");
+  nav.classList.add("bg-dark");
+  final.classList.add("final-dark");
+  for (let i = 0; i < navElements.length; i++) {
+    navElements[i].classList.add("text-white");
+  }
+  for (let i = 0; i < h3.length; i++) {
+    h3[i].classList.add("h3-dark");
+  }
+};
+
 const checkForTheme = () => {
   let theme = localStorage.getItem('theme');
   if(theme === "dark") {
-    switchToLight();
-  } else {
     switchToDark();
+  } else {
+    switchToLight();
   }
 }
 
