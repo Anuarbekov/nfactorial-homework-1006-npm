@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pushToRepo": "git add . \n git commit -am 'commit' \n git remote add origin https://github.com/Anuarbekov/nfactorial-homework-1006-npm.git \n git push origin master"
+    "pushToRepo": "git add . \n git commit -am 'commit it' \n git remote add files https://github.com/Anuarbekov/nfactorial-homework-1006-npm.git \n git push files master"
   },
   "keywords": [],
   "author": "",
