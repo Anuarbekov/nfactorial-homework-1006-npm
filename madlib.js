@@ -28,23 +28,13 @@ $("document").ready(() => {
   });
 });
 
-$('#switchToLight').on('click', () => {
-
+$("#switchToLight").on("click", () => {
+  localStorage.setItem("theme", "light");
 });
 
-
-$('#switchToDark').on('click', () => {
-
+$("#switchToDark").on("click", () => {
+  localStorage.setItem("theme", "dark");
 });
-
-
-
-
-
-
-
-
-
 
 /*
 $("#switchTo").on("click", function () {
@@ -65,5 +55,5 @@ $("#switchTo").on("click", function () {
 */
 
 const addCookies = () => {
-  document.cookie = "username=someone; expires=Wed, 15 Jun 2022 00:00:00 GMT";
+  document.cookie = "user=someone; expires=Wed, 15 Jun 2022 00:00:00 GMT";
 };

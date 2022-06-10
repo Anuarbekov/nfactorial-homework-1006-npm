@@ -1,7 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-.body-dark {
-  background-color: black;
-}
 #msform {
   width: 200px;
   background: #27ae60;
@@ -31,17 +28,7 @@ input {
 h3 {
   font-family: montserrat;
 }
-.h3-dark {
-  color: white;
-}
 #final {
-  font-size: 30px;
-  margin-bottom: 10px;
-  padding: 15px;
-  font-family: montserrat;
-}
-.final-dark {
-  color: white;
   font-size: 30px;
   margin-bottom: 10px;
   padding: 15px;
@@ -62,4 +49,20 @@ h3 {
 }
 .addcookie {
   cursor: pointer;
+}
+
+
+
+.body-dark {
+  background-color: black;
+}
+.final-dark {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-family: montserrat;
+}
+.h3-dark {
+  color: white;
 }
